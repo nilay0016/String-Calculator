@@ -24,6 +24,13 @@ public class StringCalculatorTest {
         assertEquals(3, singleNumber);
     }
 
+    @Test
+    public void testMultipleNumberStringCalculator() {
+        StringCalculator stringCalculator2 = new StringCalculator();
+        int singleNumber = stringCalculator2.Add("1\n2,3");
+        assertEquals(6, singleNumber);
+    }
+
 
 
 }
